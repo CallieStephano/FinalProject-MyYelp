@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FinalProject-MyYelp</string>
+    <string name="welcome_to_myyelp">Welcome To MyYelp</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="title_activity_main2">MainActivity</string>
+
+</resources>
