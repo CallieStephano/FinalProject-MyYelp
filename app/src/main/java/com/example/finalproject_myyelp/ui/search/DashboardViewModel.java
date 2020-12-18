@@ -1,4 +1,4 @@
-package com.example.finalproject_myyelp.ui.dashboard;
+package com.example.finalproject_myyelp.ui.search;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -10,7 +10,7 @@ public class DashboardViewModel extends ViewModel {
 
     public DashboardViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        mText.setValue("Search for what you want");
     }
 
     public LiveData<String> getText() {

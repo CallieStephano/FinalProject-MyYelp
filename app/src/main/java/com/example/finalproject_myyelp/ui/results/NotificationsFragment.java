@@ -1,4 +1,5 @@
-package com.example.finalproject_myyelp.ui.search;
+package com.example.finalproject_myyelp.ui.results;
+
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.bottomnavfinal.R;
+import com.example.finalproject_myyelp.R;
 
 public class NotificationsFragment extends Fragment {
 

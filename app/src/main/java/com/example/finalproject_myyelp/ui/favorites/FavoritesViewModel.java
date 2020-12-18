@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 public class FavoritesViewModel extends ViewModel {
+
     private MutableLiveData<String> mText;
 
     public FavoritesViewModel() {

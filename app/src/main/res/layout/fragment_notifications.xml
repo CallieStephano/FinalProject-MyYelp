@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.notifications.NotificationsFragment">
+    tools:context=".ui.results.NotificationsFragment">
+
+
+
 
     <TextView
         android:id="@+id/text_notifications"
@@ -17,6 +20,131 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="299dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="112dp"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="299dp"
+        android:layout_marginRight="24dp" />
+
+    <TextView
+        android:id="@+id/Rname"
+        android:layout_width="222dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="118dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_notifications"
+        android:layout_marginRight="118dp" />
+
+    <TextView
+        android:id="@+id/Raddress"
+        android:layout_width="284dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_notifications"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="37dp" />
+
+    <TextView
+        android:id="@+id/Rrating"
+        android:layout_width="66dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/Rcategory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rnumber"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/Rcategory"
+        android:layout_width="66dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="252dp"
+        android:layout_marginBottom="181dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rnumber"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginRight="252dp" />
+
+    <TextView
+        android:id="@+id/Rnumber"
+        android:layout_width="157dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="190dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Raddress"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="190dp" />
+
+    <TextView
+        android:id="@+id/Rstatus"
+        android:layout_width="61dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginRight="166dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Rcategory"
+        app:layout_constraintTop_toBottomOf="@+id/Rnumber" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="358dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="24dp"
+        android:text="Can you seee this"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="24dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="171dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="147dp"
+        android:text="top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="93dp"
+        android:layout_marginRight="147dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

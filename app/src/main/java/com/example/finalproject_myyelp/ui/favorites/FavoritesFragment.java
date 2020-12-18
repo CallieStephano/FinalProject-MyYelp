@@ -1,6 +1,5 @@
 package com.example.finalproject_myyelp.ui.favorites;
 
-
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,10 +12,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.bottomnavfinal.R;
-import com.example.bottomnavfinal.ui.home.HomeViewModel;
+import com.example.finalproject_myyelp.R;
 
-public class FavoritesFragment extends Fragment{
+public class FavoritesFragment extends Fragment {
     private FavoritesViewModel favoritesViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -24,7 +22,7 @@ public class FavoritesFragment extends Fragment{
         favoritesViewModel =
                 ViewModelProviders.of(this).get(FavoritesViewModel.class);
         View root = inflater.inflate(R.layout.fragment_favorites, container, false);
-        final TextView textView = root.findViewById(R.id.text_favorites);
+        final TextView textView = root.findViewById(R.id.favorites);
         favoritesViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
@@ -34,3 +32,7 @@ public class FavoritesFragment extends Fragment{
         return root;
     }
 }
+
+
+
+

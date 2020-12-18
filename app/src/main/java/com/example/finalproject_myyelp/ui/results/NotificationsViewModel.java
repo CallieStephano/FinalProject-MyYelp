@@ -1,4 +1,4 @@
-package com.example.finalproject_myyelp.ui.search;
+package com.example.finalproject_myyelp.ui.results;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

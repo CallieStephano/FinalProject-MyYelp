@@ -1,12 +1,9 @@
-package com.example.finalproject_myyelp.ui.results;
+package com.example.finalproject_myyelp.ui.search;
 
-import android.Manifest;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,20 +12,12 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.bottomnavfinal.R;
-import com.example.bottomnavfinal.ui.notifications.GPSTracker;
+import com.example.finalproject_myyelp.R;
 
 public class DashboardFragment extends Fragment {
 
     private DashboardViewModel dashboardViewModel;
-    private final int REQ_CODE = 100;
-    EditText editText;
-    ImageButton searchButton;
-    ImageButton gpsButton;
 
-    private static final int REQUEST_CODE_PERMISSION = 2;
-    String mPermission = Manifest.permission.ACCESS_FINE_LOCATION;
-    GPSTracker gps;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

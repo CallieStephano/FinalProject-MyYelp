@@ -11,7 +11,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.finalproject_myyelp.ui.home.HomeFragment;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -34,6 +33,8 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.appcompat.app.AppCompatActivity;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -58,17 +59,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         // Initialize Firebase Auth
-        setContentView(R.layout.activity_main);
-        BottomNavigationView navView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications, R.id.navigation_favorites)
-                .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavController(navView, navController);
+
         mAuth = FirebaseAuth.getInstance();
 
         createRequest();
@@ -94,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
     // Configure Google Sign In
 
 
-    // createUser("calliestephano@outlook.com" , "password");
 
 /*
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -199,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
                          // Sign in success, update UI with the signed-in user's information
                          //Log.d(TAG, "signInWithCredential:success");
                          FirebaseUser user = mAuth.getCurrentUser();
-                         Intent intent = new Intent(MainActivity.this, HomeFragment.class);
+                         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                          startActivity(intent);
                          //updateUI(user);
                      } else {

@@ -1,4 +1,4 @@
-package com.example.finalproject_myyelp.ui.search;
+package com.example.finalproject_myyelp;
 
 import android.app.AlertDialog;
 import android.app.Service;
@@ -199,5 +199,4 @@ public class GPSTracker extends Service implements LocationListener {
         return null;
     }
 }
-
 
